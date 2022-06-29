@@ -1,0 +1,44 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.hikari",
+      "type": "com.jh.triplepoint.property.HikariProperty",
+      "sourceType": "com.jh.triplepoint.property.HikariProperty"
+    },
+    {
+      "name": "spring.datasource.main",
+      "type": "com.jh.triplepoint.property.DataSourceProperty",
+      "sourceType": "com.jh.triplepoint.property.DataSourceProperty"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.datasource.hikari.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jh.triplepoint.property.HikariProperty",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.hikari.minimum-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jh.triplepoint.property.HikariProperty",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.main.password",
+      "type": "java.lang.String",
+      "sourceType": "com.jh.triplepoint.property.DataSourceProperty"
+    },
+    {
+      "name": "spring.datasource.main.url",
+      "type": "java.lang.String",
+      "sourceType": "com.jh.triplepoint.property.DataSourceProperty"
+    },
+    {
+      "name": "spring.datasource.main.username",
+      "type": "java.lang.String",
+      "sourceType": "com.jh.triplepoint.property.DataSourceProperty"
+    }
+  ],
+  "hints": []
+}

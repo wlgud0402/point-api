@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  triple-mysql:
+    image: mysql:5.7
+    command: --init-file /data/application/main.sql
+    restart: always
+    ports:
+      - "3300:3306"
+    expose:
+      - "3300"
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD="yes"
+    volumes:
+      - ./src/test/resources/schema/triplepoint_ddl.sql:/data/application/main.sql
