@@ -14,7 +14,7 @@ create table users
     created_at  datetime(6) COMMENT '유저 생성시간',
     updated_at  datetime(6) COMMENT '유저 업데이트시간',
     primary key (uuid)
-) engine=InnoDB COMMENT '유저';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT '유저';
 
 create table places
 (
@@ -24,7 +24,7 @@ create table places
     created_at   datetime(6) COMMENT '장소 생성시간',
     updated_at   datetime(6) COMMENT '장소 수정시간',
     primary key (uuid)
-) engine=InnoDB COMMENT '장소';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT '장소';
 
 create table reviews
 (
@@ -36,7 +36,7 @@ create table reviews
     updated_at    datetime(6) COMMENT '리뷰 수정시간',
     deleted_at    datetime(6) COMMENT '리뷰 삭제시간',
     primary key (uuid)
-) engine=InnoDB COMMENT '리뷰';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT '리뷰';
 
 create table review_photos
 (
@@ -46,7 +46,7 @@ create table review_photos
     created_at  datetime(6) COMMENT '사진 생성시간',
     updated_at  datetime(6) COMMENT '사진 수정시간',
     primary key (id)
-) engine=InnoDB COMMENT '리뷰 사진';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT '리뷰 사진';
 
 create table point_historys
 (
@@ -57,10 +57,10 @@ create table point_historys
     created_at  datetime(6) COMMENT '생성 시간',
     updated_at  datetime(6) COMMENT '수정 시간',
     primary key (id)
-) engine=InnoDB COMMENT '포인트 히스토리';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT '포인트 히스토리';
 
 insert into users(uuid, created_at, updated_at, total_point)
-values ("한글", CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0);
+values ("3ede0ef2-92b7-4817-a5f3-0c575361f745", CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0);
 insert into users(uuid, created_at, updated_at, total_point)
 values ("3ede0ef2-92b7-4817-a5f3-0c575361f746", CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0);
 insert into places(uuid, created_at, updated_at, name)
