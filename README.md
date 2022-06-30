@@ -9,7 +9,7 @@
 ### 실행방법
 1. docker-compose up
     - 도커를 사용해 mysql을 띄웁니다.
-    - mysql의 경우 test/resources/schema/triplepoint_ddl.sql읉 통해 기본 테이블을 생성합니다.
+    - mysql의 경우 test/resources/schema/triplepoint_ddl.sql을 통해 기본 테이블을 생성합니다.
 2. Spring Boot 서버를 실행합니다.
 
 ### 테이블 DDL
